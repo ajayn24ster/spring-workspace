@@ -1,0 +1,11 @@
+package com.example.lambda;
+
+import java.util.Optional;
+
+public class TestInterface implements TestDefaultMethod {
+public static void main(String[] args) {
+	new TestInterface().testDefault();
+	Optional<String> s;
+	boolean b=s.isPresent();
+}
+}

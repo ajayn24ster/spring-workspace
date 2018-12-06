@@ -1,0 +1,8 @@
+package com.org.exercise;
+
+public class LongestSubstring {
+	public static void main(String[] args) {
+		
+	}
+
+}

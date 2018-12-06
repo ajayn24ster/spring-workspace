@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.service.ShapeService;
+@Component
+public class Executor implements CommandLineRunner{
+@Autowired
+ShapeService service;
+	public static void main(String[] args) {
+		
+		ShapeService myApp = (ShapeService) applicationContext.getBean(ShapeService.class);
+		exec.service.getCircle();
+		
+
+	}
+
+}

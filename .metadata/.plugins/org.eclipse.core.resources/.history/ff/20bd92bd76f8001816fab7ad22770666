@@ -1,0 +1,14 @@
+package com.example.lambda;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomLinkedList {
+
+	public static void main(String[] args) {
+		List<Node> linkedList=new ArrayList<Node>();
+		
+
+	}
+
+}

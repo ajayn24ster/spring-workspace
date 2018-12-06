@@ -1,0 +1,9 @@
+package com.org.ajkart.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.org.ajkart.beans.LoginModel;
+
+public interface UserRepository extends JpaRepository<LoginModel, Integer> {
+LoginModel getOne(Integer id);
+}

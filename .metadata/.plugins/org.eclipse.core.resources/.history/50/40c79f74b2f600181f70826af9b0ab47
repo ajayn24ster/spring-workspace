@@ -1,0 +1,30 @@
+package com.org.ajkart.service;
+
+import java.util.Optional;
+
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.org.ajkart.beans.LoginModel;
+import com.org.ajkart.repo.UserRepository;
+import com.org.ajkart.util.DBSessionUtil;
+
+@Service
+public class LoginService {
+	@Autowired
+	UserRepository userRepo;
+	public LoginModel getUser(int userId) {
+		/*Session session = new DBSessionUtil().getSession();
+		session.beginTransaction();
+		LoginModel ob=session.find(LoginModel.class, 1);
+		String str = session.get(LoginModel.class, 1).toString();
+		System.out.println(str);
+		session.close();*/
+		Iterable<LoginModel> lm=userRepo.findById("id=1");
+		LoginModel lm1=lm.get();
+		// LoginModel lm=ur.getOne(userId);
+		return lm1;
+	}
+
+}

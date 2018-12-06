@@ -1,0 +1,17 @@
+package com.org.ajkart.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.org.ajkart.annotations.AjKartLogging;
+
+@Controller
+public class LoginController {
+	@AjKartLogging
+	@RequestMapping(value="/login")
+	public String getLoginPage() {
+		return "index";
+		
+	}
+
+}

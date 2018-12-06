@@ -1,0 +1,22 @@
+package com.org.exercise;
+
+public class Palindrome {
+	public static void main(String[] args) {
+		String str="madam";
+		char[] chrArray=str.toCharArray();
+		for (int i=1;i<str.length();i++) {
+			String subStr=str.substring(0,i);
+			String rev=str.
+		}
+		
+		
+		
+	}
+String reverseString (String str) {
+	String revString="";
+	for(int i=str.length();i>=0;i--) {
+		revString.append(String.toString(str.charAt(i)));
+	}
+	return null;
+}
+}

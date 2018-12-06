@@ -1,0 +1,28 @@
+package com.org.ajkart.service;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.org.ajkart.beans.LoginModel;
+import com.org.ajkart.repo.UserRepository;
+
+@Service
+public class LoginService {
+	@Autowired
+	UserRepository ur;
+	public LoginModel getUser(int userId) {
+
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+		session.beginTransaction();
+		LoginModel ob=session.find(LoginModel.class, 1);
+		//LoginModel ob1=session.get(LoginModel.class, 1);
+		session.close();
+	//	LoginModel lm=ur.getOne(userId);
+		return ob;
+	}
+
+}

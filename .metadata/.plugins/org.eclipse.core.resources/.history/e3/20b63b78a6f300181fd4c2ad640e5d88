@@ -1,0 +1,23 @@
+package com.example.demo.service;
+
+import org.aspectj.lang.annotation.Before;
+
+public class ShapeService {
+	
+	private String circle;
+	private String square;
+	public String getCircle() {
+		return circle;
+	}
+	@Before(value = "")
+	public void setCircle(String circle) {
+		this.circle = circle;
+	}
+	public String getSquare() {
+		return square;
+	}
+	public void setSquare(String square) {
+		this.square = square;
+	}
+
+}

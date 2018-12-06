@@ -1,0 +1,9 @@
+package com.org.aajkart;
+public class SpringBootStarter {
+
+	public static void main(String[] args) {
+	System.out.println("Hello");
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.org.exercise;
+
+public class LongestSubstring {
+	public static void main(String[] args) {
+		String str="tattarrattat";
+		int maxLength=0;
+		char[] charArr;
+		char c;
+		for(int i=0;i<str.length();i++) {
+		c=str.charAt(i);	
+		for(int j=i+1;j<str.length();j++) {
+		 String subStr=str.substring(i,j);
+        
+		}
+		}
+	}
+
+}

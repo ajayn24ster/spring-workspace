@@ -1,0 +1,12 @@
+package com.org.ajkart.util;
+
+public class DBSessionUtil {
+	private static  Session uniqueInstance;
+	public int i=0;
+	public static Singelton getSingelton() {
+		if(uniqueInstance==null)
+			uniqueInstance= new Singelton();
+		return uniqueInstance;
+	}
+
+}

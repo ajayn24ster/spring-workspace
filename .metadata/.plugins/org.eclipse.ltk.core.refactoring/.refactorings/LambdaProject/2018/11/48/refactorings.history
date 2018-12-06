@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ThisRefExample.java&apos; to &apos;LambdaProject/src/com.example.lambda&apos;&#x0D;&#x0A;- Original project: &apos;LambdaProject&apos;&#x0D;&#x0A;- Destination element: &apos;LambdaProject/src/com.example.lambda&apos;&#x0D;&#x0A;- Original element: &apos;com.example.lambda.ThisRefExample.java&apos;" description="Copy compilation unit" destination="/src&lt;com.example.lambda" element1="/src&lt;com.example.lambda{ThisRefExample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543311941767" units="1" version="1.0"/>
+</session>

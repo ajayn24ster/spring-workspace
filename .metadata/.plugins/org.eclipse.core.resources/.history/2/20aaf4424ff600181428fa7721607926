@@ -1,0 +1,14 @@
+package com.org.ajkart.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class DBSessionUtil {
+	private static  SessionFactory uniqueInstance;
+	public static SessionFactory getSessionFactory() {
+		if(uniqueInstance==null)
+			uniqueInstance= new Configuration().configure().buildSessionFactory();
+		return uniqueInstance;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.org.ajkart.beans;
+
+public class Snippet {
+	public static void main(String[] args) {
+		LoginBean
+	}
+}
+

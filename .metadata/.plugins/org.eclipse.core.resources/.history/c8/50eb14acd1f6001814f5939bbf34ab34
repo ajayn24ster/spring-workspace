@@ -1,0 +1,26 @@
+package com.org.ajkart.beans;
+
+public class LoginBean {
+String userName;
+String role;
+boolean status;
+public String getUserName() {
+	return userName;
+}
+public void setUserName(String userName) {
+	this.userName = userName;
+}
+public String getRole() {
+	return role;
+}
+public void setRole(String role) {
+	this.role = role;
+}
+public boolean isStatus() {
+	return status;
+}
+public void setStatus(boolean status) {
+	this.status = status;
+}
+
+}

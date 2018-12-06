@@ -1,0 +1,12 @@
+package com.org.exercise;
+
+public class LongestSubstring {
+	public static void main(String[] args) {
+		String str="tattarrattat";
+		int maxLength=0;
+		for(int i=0;i<str.length();i++) {
+			
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ajkart">
+        <property name="context-root" value="ajkart"/>
+    </wb-module>
+</project-modules>

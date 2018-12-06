@@ -1,0 +1,8 @@
+package com.example.lambda;
+
+public class Node {
+	int val;
+	Node node;
+	
+
+}

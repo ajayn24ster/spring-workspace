@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+@Aspect
+@Component
+public class LoggingAdvice {
+	
+@Before(value = "execution(public String getCircle())")
+	public void logMsg() {
+		System.out.println("Inside logging advice");
+	}
+
+}

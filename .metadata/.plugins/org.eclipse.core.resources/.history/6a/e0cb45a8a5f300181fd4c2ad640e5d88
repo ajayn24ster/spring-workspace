@@ -1,0 +1,8 @@
+package com.example.demo.service;
+
+public class ShapeService {
+	
+	private String circle;
+	private String square;
+
+}

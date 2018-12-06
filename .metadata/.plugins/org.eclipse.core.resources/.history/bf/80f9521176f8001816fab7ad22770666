@@ -1,0 +1,10 @@
+package com.org.exercise;
+
+public class LinkedList {
+	public static void main(String[] args)
+	{
+		List<String> str=new java.util.LinkedList<String>();
+		
+	}
+
+}

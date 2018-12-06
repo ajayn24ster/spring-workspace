@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-project-ajkart
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: AmarJaya
+Implementation-Vendor-Id: com.org.ajkart
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ajkart
+Created-By: Maven Integration for Eclipse
+

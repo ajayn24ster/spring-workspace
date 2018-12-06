@@ -1,0 +1,33 @@
+package com.example.demo;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+@Aspect
+@Component
+public class LoggingAdvice {
+	
+@AfterReturning(value = "getPtCut()")
+	public void logMsg(JoinPoint jp) {
+       jp.getTarget();
+		System.out.println("Inside logging advice "+jp.getTarget());
+	}
+/*@Before("args(name)")
+public void logargs(String name) {
+
+	System.out.println("Inside logging advice "+name);
+}*/
+@AfterReturning(value = "getPtCut()")
+public void aroundAdv(JoinPoint jp) {
+   jp.getTarget();
+	System.out.println("Inside logging advice "+jp.getTarget());
+}
+@Pointcut("within(com.example.demo..*)")
+public void getPtCut() {
+}
+
+}

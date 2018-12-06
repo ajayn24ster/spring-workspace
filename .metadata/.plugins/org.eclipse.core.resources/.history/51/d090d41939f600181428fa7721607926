@@ -1,0 +1,21 @@
+package com.org.ajkart.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.org.ajkart.annotations.AjKartLogging;
+import com.org.ajkart.service.LoginService;
+@RequestMapping("/api")
+@Controller
+public class LoginController {
+	@Autowired
+	LoginService loginService;
+	@RequestMapping(value="/login")
+	public String getLoginPage() {
+		LoginModel lm=loginService.getUser(1);
+		return "index";
+		
+	}
+
+}
